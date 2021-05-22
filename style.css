@@ -1,0 +1,230 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+ background-color: white;
+ color: black;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ margin: 0;
+ padding: 10px 45px 45px 45px;
+}
+
+
+h1,h2 {
+ margin: 0;
+}
+
+header h1 {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#logoImg {
+    padding-right: 10px;
+    pointer-events: none;
+    width: 320px;
+    position: relative;
+    bottom: 12px;
+}
+
+.menu {
+ background-color:black;
+ display: flex;
+ justify-content: center;
+ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.22), 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+ .menu a {
+ display: block;
+ text-align: center;
+ padding: 15px;
+ color: white;
+ text-decoration: none;
+ transition: all 0.5s;
+}
+
+.menu a:hover {
+    background-color: white;
+    color:black;
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.Banner:hover {
+    box-shadow: 0px 0px 15px #aaaca9;
+}
+
+.Banner {
+    background-image: url(images/banner.jpg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1140px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+
+.Produtos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 600px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.esquerda:hover {
+    box-shadow: 0px 0px 15px #aaaca9;
+    -moz-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.esquerda {
+    background-image: url(images/l2.jpg);
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 500px;
+    height: 398px;
+    cursor: pointer;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.direita:hover {
+    box-shadow: 0px 0px 15px #aaaca9;
+    -moz-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.direita {
+    background-image: url(images/l1.jpg);
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 500px;
+    height: 398px;
+    cursor: pointer;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.maisvendidos {
+    margin-left: 128px;
+}
+
+.bannerfinal {
+    background-image: url(images/fim.png);
+    padding: 25px;
+    width: 545px;
+    height: 540px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}
+
+
+.titulo {
+    text-align: center;
+    color: #030303;
+    font-family: Fonte;
+    font-size: 40px;
+    position: relative;
+    left: 130px;
+    width: 80%;
+    top: 10px;
+    margin-top: 10px;
+}
+
+.produto {
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+    font-size: 20px;
+}
+
+.produto:hover {
+    box-shadow: 0px 0px 15px #c0c0c0;
+}
+
+.produto img {
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.produto:hover img {
+   -moz-transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.grid {
+   display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 15px;
+}
+
+.tituloProduto {
+   font-weight: bold;
+}
+ #entrega{
+   position: fixed;
+   bottom: 5px;
+   right: 10px;
+   height: 100px ;
+   width:300px ;
+ }
+ #entrega img{
+   position: absolute;
+   right:10px ;
+   width: 75px ;
+   border-radius: 50%;
+}
+#tel{
+   color: white;
+   position: absolute;
+   height:70px;
+   background-color: #000000;
+   margin-top: 10px;
+   padding:10px ;
+   border-radius: 16px;
+   opacity: 0;
+   transition: opacity 0.3s;
+}
+#entrega img:hover + #tel{
+  opacity: 1;
+ }
+#tel p{
+ margin:0;
+ }
